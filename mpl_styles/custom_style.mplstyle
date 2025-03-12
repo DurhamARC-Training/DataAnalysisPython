@@ -1,0 +1,18 @@
+# Figure properties
+figure.figsize: 8, 6
+figure.dpi: 300
+
+# Font properties
+font.family: serif
+font.size: 12
+axes.labelsize: 14
+xtick.labelsize: 12
+ytick.labelsize: 12
+
+# Line properties
+lines.linewidth: 2
+lines.markersize: 8
+
+# Grid settings
+grid.linestyle: --
+grid.alpha: 0.5
