@@ -1,0 +1,257 @@
+\documentclass{beamer}
+\usepackage{graphicx}
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage{amsmath}
+\usepackage{courier}
+
+% Configure listings for Python code
+\lstset{
+    language=Python,
+    basicstyle=\small\ttfamily,
+    keywordstyle=\color{blue},
+    stringstyle=\color{red},
+    commentstyle=\color{green!60!black},
+    numbers=left,
+    numberstyle=\tiny,
+    breaklines=true,
+    frame=single,
+    showstringspaces=false
+}
+
+% Better spacing for frames
+\setbeamertemplate{frametitle}{\vspace{0.5em}\insertframetitle\vspace{0.5em}}
+\setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{footline}[frame number]
+
+\title{Introduction to Matplotlib}
+\subtitle{Data Visualization in Python}
+\author{Data Analysis with Python}
+\date{\today}
+
+% Enable notes
+\setbeameroption{show notes}
+
+\begin{document}
+
+\begin{frame}
+    \titlepage
+\end{frame}
+\note{
+    Key points for introduction:
+    \begin{itemize}
+        \item This course covers both basic and advanced Matplotlib features
+        \item Emphasize practical applications and best practices
+        \item Will build from simple plots to complex visualizations
+        \item Exercises will reinforce concepts through hands-on practice
+    \end{itemize}
+}
+
+\begin{frame}{Course Timeline}
+    \begin{itemize}
+        \item 0-5 min: Introduction
+        \begin{itemize}
+            \item Course overview and objectives
+        \end{itemize}
+        \item 5-20 min: Basic Plotting
+        \begin{itemize}
+            \item Import and setup
+            \item Simple line plots
+            \item Interface approaches
+        \end{itemize}
+        \item 20-35 min: Subplots
+        \begin{itemize}
+            \item Figure/Axes hierarchy
+            \item Multiple plots
+            \item Layout management
+        \end{itemize}
+        \item 35-45 min: Plot Customization
+        \item 45-60 min: Exercise 1 (Anscombe's Quartet)
+        \item 60-75 min: Styles \& Export
+        \item 75-85 min: Exercise 2 (Custom Styles)
+        \item 85-90 min: Wrap-up and Q\&A
+    \end{itemize}
+\end{frame}
+\note{
+    Timeline management tips:
+    \begin{itemize}
+        \item Keep demonstrations short and focused
+        \item Allow buffer time for questions
+        \item Monitor exercise progress
+        \item Be prepared to adjust timing based on group needs
+    \end{itemize}
+}
+
+\begin{frame}[fragile]{Basic Plotting with Matplotlib}
+    \begin{itemize}
+        \item Matplotlib is Python's primary plotting library
+        \item Two main approaches:
+        \begin{itemize}
+            \item \texttt{pyplot} interface (quick, simple plots)
+            \item Object-oriented interface (more control)
+        \end{itemize}
+        \item Basic example:
+    \end{itemize}
+\begin{lstlisting}
+import matplotlib.pyplot as plt
+import numpy as np
+x = np.linspace(0, 2*np.pi, 100)
+plt.plot(x, np.sin(x))
+plt.show()
+\end{lstlisting}
+\end{frame}
+\note{
+    Teaching tips:
+    \begin{itemize}
+        \item Start by explaining the difference between pyplot and object-oriented interfaces
+        \item Demonstrate live coding of the simple example
+        \item Show what happens if you forget plt.show()
+        \item Mention common pitfalls with importing matplotlib
+        \item Explain why we use numpy.linspace instead of range
+    \end{itemize}
+}
+
+\begin{frame}[fragile]{Subplots}
+    \begin{itemize}
+        \item Use subplots for multiple plots in one figure
+        \item Create using \texttt{plt.subplots(rows, cols)}
+        \item Access individual plots through axes array
+        \item Example:
+    \end{itemize}
+\begin{lstlisting}
+fig, axs = plt.subplots(2, 1)
+axs[0].plot(x, np.sin(x))
+axs[1].plot(x, np.cos(x))
+\end{lstlisting}
+\end{frame}
+\note{
+    Important concepts:
+    \begin{itemize}
+        \item Explain figure vs axes hierarchy
+        \item Show how to access individual subplots using array indexing
+        \item Demonstrate different subplot layouts (2x2, 3x1, etc.)
+        \item Mention tight\_layout() for fixing overlapping issues
+        \item Show how to share axes between subplots
+    \end{itemize}
+}
+
+\begin{frame}[fragile]{Plot Customization}
+    \begin{itemize}
+        \item Labels and titles
+        \item Colors and styles
+        \item Markers and line properties
+        \item Legend and grid
+        \item Example:
+    \end{itemize}
+
+\begin{lstlisting}
+ax.plot(x, y, color='blue', label='data')
+ax.set_xlabel('X axis')
+ax.set_ylabel('Y axis')
+ax.set_title('My Plot')
+ax.legend()
+ax.grid(True)
+\end{lstlisting}
+\end{frame}
+\note{
+    Customization tips:
+    \begin{itemize}
+        \item Show real-world examples of when to use different styles
+        \item Demonstrate interactive customization in Jupyter
+        \item Discuss color choices for accessibility
+        \item Show how to save custom styles for reuse
+        \item Mention journal-specific formatting requirements
+    \end{itemize}
+}
+
+\begin{frame}{Exercise 1: Anscombe's Quartet}
+    \begin{itemize}
+        \item Famous dataset showing importance of visualization
+        \item Four datasets with identical statistics
+        \item Different visual patterns
+        \item Tasks:
+        \begin{itemize}
+            \item Load data from JSON
+            \item Create scatter plots
+            \item Add regression lines
+            \item Compare results
+        \end{itemize}
+    \end{itemize}
+\end{frame}
+\note{
+    Exercise guidance:
+    \begin{itemize}
+        \item Let students attempt loading JSON data first
+        \item Point out that all datasets have identical:
+        \begin{itemize}
+            \item Mean x $\approx$ 9.0
+            \item Mean y $\approx$ 7.5
+            \item Correlation coefficient $\approx$ 0.816
+            \item Linear regression: y = 3 + 0.5x
+        \end{itemize}
+        \item Discuss why visualization is crucial for data analysis
+    \end{itemize}
+}
+
+\begin{frame}[fragile]{Exercise 2: Custom Plotting Styles}
+    \begin{itemize}
+        \item Create professional-looking plots
+        \item Matplotlib style sheets
+        \item Components to customize:
+        \begin{itemize}
+            \item Figure size and DPI
+            \item Font sizes and families
+            \item Line styles and colors
+            \item Grid properties
+        \end{itemize}
+    \end{itemize}
+    \vspace{1em}
+    \begin{lstlisting}
+plt.style.use('seaborn')  # Example style
+    \end{lstlisting}
+\end{frame}
+\note{
+    Style implementation tips:
+    \begin{itemize}
+        \item Show examples of built-in styles first
+        \item Demonstrate creating a custom style file
+        \item Discuss common style elements for scientific plots
+        \item Show how to combine multiple style sheets
+        \item Reference matplotlib style sheet reference online
+    \end{itemize}
+}
+
+\begin{frame}[fragile]{Saving Plots}
+    \begin{itemize}
+        \item Use \texttt{plt.savefig()} or \texttt{fig.savefig()}
+        \item Common formats:
+        \begin{itemize}
+            \item PNG (raster) -- Best for web
+            \item SVG (vector) -- Scalable graphics
+            \item PDF (vector) -- Publication quality
+        \end{itemize}
+        \item Control DPI and size:
+        \begin{lstlisting}
+fig.savefig('plot.svg',
+            dpi=300,
+            bbox_inches='tight',
+            format='svg')
+        \end{lstlisting}
+    \end{itemize}
+\end{frame}
+\note{
+    Export guidelines:
+    \begin{itemize}
+        \item Explain when to use each file format:
+        \begin{itemize}
+            \item PNG: web, presentations
+            \item SVG: web with zoom, figures needing editing
+            \item PDF: publication submissions
+        \end{itemize}
+        \item Discuss resolution requirements for different purposes
+        \item Show how to handle font embedding
+        \item Mention size limits for journal submissions
+    \end{itemize}
+}
+
+\end{document}
