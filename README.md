@@ -14,48 +14,19 @@ The repository is organized as follows:
 
 - `mplstyles`: Some matplotlib styles to use as examples during the course.
 
-## Getting Started as student
+## Accessing the Materials
 
-To get started with the course, follow these steps:
+For this course we are using [JupyterLite](https://jupyterlite.readthedocs.io/en/stable/), which is a tool that allows us to launch [JupyterLab](https://jupyterlab.readthedocs.io/en/latest/) and run our Python code in the web browser through the notebook (.ipynb) files contained in this repository.
 
-1. Clone the repository to your local machine using the following command or you can download this repo as zip file:
+To access and run the course materials, start by:
 
-    ```
-    git clone https://github.com/DurhamARC-Training/DataAnalysisPython
-    ```
+* Navigating to the course materials on our GitHub page: https://durhamarc-training.github.io/DataAnalysisPython/
 
-2. If you want to set up a new conda environment for the course you can use the environment.yml provided in this folder.
+* On the left side bar, find and open the "Courses" folder, and then open the file "01_Welcome.ipynb"
 
-3. Navigate to the `Course` folder to access the presentations and exercises to use during the course.
+You are now ready to start the course!
 
-4. If you need assistance, refer to the `Filled_Course` folder for the solutions.
-
-5. There is also a python script which downloads everything (including the filled notebook) as a ZIP archive and extracts it a folder if GIT isn't available:
-
-      a. Download the `pull_files_from_repo.py` file and put it into your environment
-
-      b. Execute `python pull_files_from_repo.py` in the folder.
-
-## Getting Started for Teaching
-
-To get started with teaching the course, follow these steps:
-
-1. Install the requirements including JupyterLab Deck by running the following command:
-
-    ```
-    conda env create -f environment.yml
-    ```
-
-2. Launch JupyterLab by running the following command:
-
-    ```
-    conda activate teaching_data_analysis
-    jupyter lab
-    ```
-
-3. Navigate to the `Course` folder to access the presentations and exercises to use during the course. If needed use the notebooks in the `Filled_Course` as lecture notes
-
-4. Click on the little card styles JupyterLab-Deck icon for running a notebook as a presentation.
+NOTE: The first time you run your code/load new modules, there may be a small wait while the module(s) are loaded.
 
 ## Contributing
 
