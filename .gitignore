@@ -1,2 +1,5 @@
 .ipynb_checkpoints
 matplotlib_output.*
+*.pdf
+*.png
+*.svg
