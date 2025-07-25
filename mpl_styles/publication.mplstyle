@@ -1,8 +1,54 @@
+# publication.mplstyle - Styling Example for journal publications
 
-figure.dpi : 300
-axes.titlesize : 12
-axes.labelsize : 10
-lines.linewidth : 1
-lines.markersize : 2
-xtick.labelsize : 8
-ytick.labelsize : 8
+# High DPI for print quality
+figure.dpi       : 300 
+
+# Font settings
+font.family      : serif
+font.serif       : Times, Times New Roman, DejaVu Serif
+font.size        : 8
+font.weight      : normal
+mathtext.fontset: dejavuserif
+
+
+# Conservative sizing for text elements
+axes.labelsize   : 9
+axes.titlesize   : 10
+xtick.labelsize  : 8
+ytick.labelsize  : 8
+legend.fontsize  : 8
+
+# Line styling
+lines.linewidth  : 1.5
+lines.markersize : 4
+patch.linewidth  : 0.5
+
+# Subtle grid
+axes.grid        : True
+grid.color       : CCCCCC
+grid.linestyle   : :
+grid.linewidth   : 0.5
+grid.alpha       : 0.8
+
+# All spines visible
+axes.spines.left   : True
+axes.spines.bottom : True
+axes.spines.top    : True
+axes.spines.right  : True
+axes.linewidth     : 0.8
+
+# Inherit clean text styling from colors.mplstyle
+text.color         : 333333
+axes.labelcolor    : 333333
+xtick.color        : 333333
+ytick.color        : 333333
+
+# Tight layout for space efficiency
+figure.subplot.left   : 0.15
+figure.subplot.bottom : 0.15
+figure.subplot.right  : 0.95
+figure.subplot.top    : 0.9
+
+# Vector graphics for scalability
+pdf.fonttype     : 42  # Embed fonts as paths (required by some journals)
+ps.fonttype      : 42
