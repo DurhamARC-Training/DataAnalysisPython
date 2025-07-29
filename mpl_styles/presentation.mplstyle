@@ -1,8 +1,56 @@
-figure.figsize:     8.755,5.307
+# presentation.mplstyle - Complete styling for slides and presentations
+# Optimized for visibility from distance with large text and high contrast
+# Use as: plt.style.use('presentation') or combine with layout styles
 
-axes.titlesize : 24
-axes.labelsize : 20
-lines.linewidth : 3
+# Figure size optimized for 16:9 slides (common presentation format)
+figure.figsize   : 10, 6
+figure.dpi       : 100
+
+# Large, bold fonts for readability from distance
+font.size        : 16
+font.weight      : normal
+axes.labelsize   : 16
+axes.titlesize   : 22
+xtick.labelsize  : 16
+ytick.labelsize  : 16
+legend.fontsize  : 16
+
+# Thicker lines for better visibility from distance
+lines.linewidth  : 4.0
 lines.markersize : 10
-xtick.labelsize : 16
-ytick.labelsize : 16
+patch.linewidth  : 1.0
+
+# Clean background - no distractions
+figure.facecolor : white
+axes.facecolor   : white
+
+# Minimal grid - less visual clutter for presentations
+axes.grid        : True
+grid.color       : D0D0D0
+grid.linestyle   : -
+grid.linewidth   : 0.8
+grid.alpha       : 0.5
+
+# Clean spines
+axes.spines.left   : True
+axes.spines.bottom : True
+axes.spines.top    : False
+axes.spines.right  : False
+axes.linewidth     : 3
+
+# Higher contrast text for projection
+text.color         : 000000
+axes.labelcolor    : 000000
+xtick.color        : 000000
+ytick.color        : 000000
+
+xtick.major.width:   1.8     # major tick width in points
+xtick.minor.width:   1.6     # minor tick width in points
+ytick.major.width:   1.8     # major tick width in points
+ytick.minor.width:   1.6     # minor tick width in points
+
+# Increased margins
+figure.subplot.left   : 0.125
+figure.subplot.bottom : 0.11
+figure.subplot.right  : 0.9
+figure.subplot.top    : 0.88
