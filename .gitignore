@@ -1,5 +1,4 @@
 .ipynb_checkpoints
 matplotlib_output.*
-*.pdf
-*.png
-*.svg
+Course/*.{pdf,png,svg}
+Filled_Course/*.{pdf,png,svg}
