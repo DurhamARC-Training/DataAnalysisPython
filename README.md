@@ -1,6 +1,13 @@
-# Course Data Analysis in Python
+![Course logo](img/ARC448p.png)
 
-Welcome to the Course "Data Analysis in Python" repository! This repository contains all the materials and resources for the course.
+# Course: Data Analysis with Python
+
+Welcome to the Data Analysis with Python repository! This repository contains all the materials and resources for the course.
+
+## Course description
+
+Python has become the dominant language for scientific data analysis across disciplines, from physics and biology to economics and psychology. This hands-on course teaches researchers the core Python libraries needed for this purpose: NumPy for numerical computing, pandas for data manipulation and analysis, and matplotlib for creating publication-quality visualisations. Through practical exercises using real research datasets, you'll learn to load, clean, analyse, and visualise data while exploring cases of data integrity issues in published research.
+The course emphasises practical application over theory, with each topic beginning with a code-along demonstration followed by hands-on exercises. Upon completion, you'll have the foundation to integrate Python into your research workflow and access its ecosystem of specialised scientific libraries.
 
 ## Organization
 
@@ -22,7 +29,7 @@ To access and run the course materials, start by:
 
 * Navigating to the course materials on our GitHub page: https://durhamarc-training.github.io/DataAnalysisPython/
 
-* On the left side bar, find and open the "Courses" folder, and then open the file "01_Welcome.ipynb"
+* Start by accessing the "01_Welcome.ipynb" notebook in the "Courses" directory.
 
 You are now ready to start the course!
 
@@ -32,5 +39,5 @@ NOTE: The first time you run your code/load new modules, there may be a small wa
 
 If you find any issues or have suggestions for improvement, please feel free to open an issue or submit a pull request. Contributions are welcome!
 
-You can add the files of the `common-tools-for-teaching` github submodule by typing in `git submodule update --init`. Consult the README in the then filled `common-tools` directory for further instructions.
-In general you should never edit the files contained within the `Course` folder, but work on `Filled_Course` and have the tool generate the student notebook  versions automatically.
+You can add the files of the `common-tools` github submodule by typing in `git submodule update --init`. Consult the README in the then filled `common-tools` directory for further instructions.
+In general you should never edit the content in the `Course` but work on `Filled_Course` and have the tool generate the student notebook versions automatically as described in the `common-tools` README.
