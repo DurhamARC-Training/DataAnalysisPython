@@ -1,0 +1,57 @@
+{
+  "content": [
+    {
+      "content": null,
+      "created": "2026-03-06T18:16:02.643236Z",
+      "format": null,
+      "hash": null,
+      "hash_algorithm": null,
+      "last_modified": "2026-03-06T18:15:41.560566Z",
+      "mimetype": "text/csv",
+      "name": "Gino_Kouchaki_Galinsky_Study_4_Data.csv",
+      "path": "Data/exercise/Gino_Kouchaki_Galinsky_Study_4_Data.csv",
+      "size": 74095,
+      "type": "file",
+      "writable": true
+    },
+    {
+      "content": null,
+      "created": "2026-03-06T18:16:02.643575Z",
+      "format": null,
+      "hash": null,
+      "hash_algorithm": null,
+      "last_modified": "2026-03-06T18:15:41.561107Z",
+      "mimetype": "application/json",
+      "name": "anscombe.json",
+      "path": "Data/exercise/anscombe.json",
+      "size": 630,
+      "type": "file",
+      "writable": true
+    },
+    {
+      "content": null,
+      "created": "2026-03-06T18:16:02.643765Z",
+      "format": null,
+      "hash": null,
+      "hash_algorithm": null,
+      "last_modified": "2026-03-06T18:15:41.562566Z",
+      "mimetype": "text/plain",
+      "name": "fco.txt",
+      "path": "Data/exercise/fco.txt",
+      "size": 663312,
+      "type": "file",
+      "writable": true
+    }
+  ],
+  "created": "2026-03-06T18:16:02.643749Z",
+  "format": "json",
+  "hash": null,
+  "hash_algorithm": null,
+  "last_modified": "2026-03-06T18:16:02.643749Z",
+  "mimetype": null,
+  "name": "exercise",
+  "path": "Data/exercise",
+  "size": null,
+  "type": "directory",
+  "writable": true
+}

@@ -1,0 +1,43 @@
+{
+  "content": [
+    {
+      "content": null,
+      "created": "2026-03-06T18:16:02.646054Z",
+      "format": null,
+      "hash": null,
+      "hash_algorithm": null,
+      "last_modified": "2026-03-06T18:16:02.646054Z",
+      "mimetype": null,
+      "name": "presentation",
+      "path": "Data/presentation",
+      "size": null,
+      "type": "directory",
+      "writable": true
+    },
+    {
+      "content": null,
+      "created": "2026-03-06T18:16:02.643749Z",
+      "format": null,
+      "hash": null,
+      "hash_algorithm": null,
+      "last_modified": "2026-03-06T18:16:02.643749Z",
+      "mimetype": null,
+      "name": "exercise",
+      "path": "Data/exercise",
+      "size": null,
+      "type": "directory",
+      "writable": true
+    }
+  ],
+  "created": "2026-03-06T18:16:02.644765Z",
+  "format": "json",
+  "hash": null,
+  "hash_algorithm": null,
+  "last_modified": "2026-03-06T18:16:02.644765Z",
+  "mimetype": null,
+  "name": "Data",
+  "path": "Data",
+  "size": null,
+  "type": "directory",
+  "writable": true
+}
