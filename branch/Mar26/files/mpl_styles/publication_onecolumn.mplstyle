@@ -1,0 +1,22 @@
+# onecolumn.mplstyle - Single column figure dimensions and layout
+
+# Narrow figure size to fit single column (typical academic column ~3.5 inches)
+figure.figsize   : 3.5, 3
+
+# Optimized margins for narrow width - more space for labels
+figure.subplot.left   : 0.18  # More space for y-axis labels in narrow format
+figure.subplot.bottom : 0.20  # More space for x-axis labels
+figure.subplot.right  : 0.95
+figure.subplot.top    : 0.90
+
+# Reduce tick spacing to avoid overlap in narrow space
+xtick.major.size : 3
+ytick.major.size : 3
+xtick.minor.size : 1.5
+ytick.minor.size : 1.5
+
+# Legend positioning optimized for wide plots
+legend.loc           : best
+legend.frameon       : True
+legend.numpoints     : 1
+legend.fontsize      : 6
